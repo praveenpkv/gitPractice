@@ -25,3 +25,11 @@ const square = function (number) {
 const cube = function (number) {
   return number * number * number;
 }
+
+const simpleInterest = function (principal, rate, time) {
+  return (principal * rate * time) / 100;
+}
+
+const compoundInterest = function (principal, rate, time) {
+  return principal(Math.pow((100 + rate) / 100, time));
+}
