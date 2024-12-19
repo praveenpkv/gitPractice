@@ -22,16 +22,15 @@ const sortArrayWRTFirstElement = function (array) {
 })
 }
 
-// // ++++++++++++++ THIRD ++++++++++++
+// ++++++++++++++ THIRD ++++++++++++
 
-
-// const array = [[1], [8, 6, 7], [2, 3, 5, 1]];
-
-// array.sort(function(x, y) {
-// 	x.sort(function (x, y) { return x - y});
-// 	y.sort(function (x, y) { return x - y});
-//   return x[0] - y[0];
-// })
+const sortArrayWithInnerArray = function (array) {
+  return array.sort(function(x, y) {
+	x.sort(function (x, y) { return x - y});
+	y.sort(function (x, y) { return x - y});
+  return x[0] - y[0];
+})
+}
 
 // //  ++++++++++++ Fourth ++++++++
 
@@ -74,3 +73,4 @@ const sortArrayWRTFirstElement = function (array) {
 
 console.log(sortOddEven([34,59,20,12,8,1,97]));
 console.log(sortArrayWRTFirstElement([[1,2],[0,8],[9,10]]));
+console.log(sortArrayWithInnerArray([[1], [8, 6, 7], [2, 3, 5, 1]]));
