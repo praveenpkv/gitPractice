@@ -33,3 +33,11 @@ const simpleInterest = function (principal, rate, time) {
 const compoundInterest = function (principal, rate, time) {
   return principal(Math.pow((100 + rate) / 100, time));
 }
+
+const nthTermAp = function (firstTerm, term, difference) {
+  return firstTerm + (term - 1) * difference;
+}
+
+const nthTermGp = function (firstTerm, term, commonRatio) {
+  return firstTerm * Math.pow(commonRatio, term -1);
+}
